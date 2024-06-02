@@ -1,0 +1,40 @@
+info:
+  app:
+    name: "biblioteca.pessoal"
+    description: "API para gerenciamento de biblioteca pessoal"
+    version: 1.0.0
+server:
+  tomcat:
+    relaxed-path-chars: ['[',']']
+    relaxed-query-chars: ['[',']']
+  port: 8081
+  servlet:
+    contextPath: /biblioteca-pessoal
+spring:
+  profiles:
+    active: ${SPRING_PROFILE_ACTIVE}
+  application:
+    name: "biblioteca"
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  datasource:
+    url: jdbc:oracle:thin:@192.168.0.180:1521/XE
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    username: system
+    password: 1AA36ch100#
+#  h2:
+#    console:
+#      enable: true
+#      path: /h2-console
+#  datasource:
+#    url: jdbc:h2:mem:testdb
+#    driverClassName: org.h2.Driver
+#    username: sa
+#    password: 123
+#springdoc:
+#  pathsToMatch: /**
+#  swagger-ui:
+#    enable: true
+

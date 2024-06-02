@@ -1,0 +1,55 @@
+Claro, aqui está uma versão atualizada das entidades, adicionando a noção de subgêneros:
+
+1. **Livro (Book):**
+   - ID: Identificador único do livro.
+   - Título: Título do livro.
+   - Autor: Autor do livro.
+   - Data de Publicação: Data em que o livro foi publicado.
+   - Gênero: Gênero principal do livro (ficção, não ficção, romance, fantasia, etc.).
+   - Subgênero: Subgênero do livro (por exemplo, dentro do gênero de fantasia, pode haver subgêneros como alta fantasia, fantasia urbana, etc.).
+   - ISBN: Número de identificação internacional do livro.
+   - Editora: Editora do livro.
+
+2. **Graphic Novel:**
+   - ID: Identificador único da graphic novel.
+   - Título: Título da graphic novel.
+   - Autor: Autor da graphic novel.
+   - Artista: Artista responsável pelos desenhos da graphic novel.
+   - Data de Publicação: Data em que a graphic novel foi publicada.
+   - Gênero: Gênero principal da graphic novel (ação, aventura, super-heróis, etc.).
+   - Subgênero: Subgênero da graphic novel.
+   - ISBN: Número de identificação internacional da graphic novel.
+   - Editora: Editora da graphic novel.
+
+3. **Editora (Publisher):**
+   - ID: Identificador único da editora.
+   - Nome: Nome da editora.
+   - Endereço: Endereço da editora.
+   - Ano de Fundação: Ano em que a editora foi fundada.
+
+4. **Autor (Author):**
+   - ID: Identificador único do autor.
+   - Nome: Nome do autor.
+   - Nacionalidade: Nacionalidade do autor.
+   - Data de Nascimento: Data de nascimento do autor.
+   - Gênero Literário: Gênero literário em que o autor se especializa.
+
+5. **Gênero (Genre):**
+   - ID: Identificador único do gênero.
+   - Nome: Nome do gênero (ficção, não ficção, romance, fantasia, ação, aventura, etc.).
+
+6. **Subgênero (Subgenre):**
+   - ID: Identificador único do subgênero.
+   - Nome: Nome do subgênero (por exemplo, alta fantasia, fantasia urbana, etc.).
+   - Gênero: Gênero principal ao qual o subgênero pertence.
+
+7. **Ilustrador (Illustrator):**
+   - ID: Identificador único do ilustrador.
+   - Nome: Nome do ilustrador.
+   - Nacionalidade: Nacionalidade do ilustrador.
+   - Data de Nascimento: Data de nascimento do ilustrador.
+
+Essas entidades fornecem uma estrutura flexível para modelar um banco de dados que engloba livros e graphic novels, incluindo a noção de gêneros e subgêneros para uma classificação mais detalhada e refinada. Você pode personalizar e expandir essas entidades conforme necessário para atender aos requisitos específicos do seu projeto.
+
+
+@Data

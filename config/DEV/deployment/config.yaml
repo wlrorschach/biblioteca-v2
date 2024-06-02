@@ -1,0 +1,6 @@
+app:
+  name: biblioteca-pessoal-do-wiliam
+  centro-custo: ferreira-silva
+
+configmap:
+  APP_NAME: "Biblioteca pessoal"
